@@ -17,8 +17,8 @@ class Post(models.Model):
 
     objects = models.Manager() # The default manager.
     published = PublishedManager() # Our custom manager.
+    
     tags = TaggableManager()
-
     STATUS_CHOICES = (
         ('draft', 'Draft'),
         ('published', 'Published'),
